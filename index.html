@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
     <title>Monitoramento de Sono</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Monitoramento de Sono</h1>
-    <div id="calendar"></div>
-    
-    <script src="script.js"></script>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Domingo</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="green">1</td>
+                    <td class="red">2</td>
+                    <td class="green">3</td>
+                    <td class="red">4</td>
+                    <td class="green">5</td>
+                    <td class="red">6</td>
+                    <td class="green">7</td>
+                </tr>
+                <tr>
+                    <td class="green">8</td>
+                    <td class="red">9</td>
+                    <td class="green">10</td>
+                    <td class="red">11</td>
+                    <td class="green">12</td>
+                    <td class="red">13</td>
+                    <td class="green">14</td>
+                </tr>
+                <!-- Continue adicionando mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>
