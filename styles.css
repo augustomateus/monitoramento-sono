@@ -1,14 +1,23 @@
+/* Estilo global */
 body {
     margin: 0; /* Remove margens padrão do body */
     padding: 0; /* Remove preenchimentos padrão do body */
+    font-family: Arial, sans-serif; /* Fonte padrão */
 }
 
+/* Estilo para o contêiner da tabela */
+.container {
+    overflow-x: auto; /* Adiciona rolagem horizontal, se necessário */
+}
+
+/* Estilo para a tabela */
 table {
     width: 100%; /* Garante que a tabela ocupe toda a largura da tela */
     max-width: 100%; /* Remove limites de largura */
     border-collapse: collapse; /* Remove espaço entre células */
 }
 
+/* Estilo para as células da tabela */
 td {
     padding: 10px; /* Espaçamento interno nas células */
     text-align: center; /* Centraliza o texto */
@@ -51,6 +60,4 @@ td {
     }
 
     td {
-        padding: 5px; /* Diminui o preenchimento nas células */
-    }
-}
+        padding: 5px; /* Diminui o preenchimento nas células
