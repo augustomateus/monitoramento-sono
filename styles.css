@@ -31,3 +31,30 @@ body {
 .day.red {
     background-color: lightcoral;
 }
+@media (max-width: 600px) {
+    /* Estilos que serão aplicados em telas menores que 600px */
+    
+    body {
+        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
+    }
+
+    table {
+        font-size: 12px; /* Tamanho da fonte das tabelas para dispositivos móveis */
+        width: 100%; /* Garante que a tabela ocupe toda a largura da tela */
+    }
+
+    td {
+        padding: 5px; /* Reduz o preenchimento nas células da tabela */
+    }
+
+    input[type="date"],
+    select {
+        width: 100%; /* Garante que os inputs ocupem toda a largura da tela */
+        padding: 8px; /* Espaçamento interno */
+    }
+
+    button {
+        width: 100%; /* Botão ocupa toda a largura da tela */
+        padding: 10px; /* Espaçamento interno do botão */
+    }
+}
