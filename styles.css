@@ -1,65 +1,30 @@
-/* Estilo global */
 body {
-    margin: 0; /* Remove margens padrão do body */
-    padding: 0; /* Remove preenchimentos padrão do body */
-    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-/* Estilo para o contêiner da tabela */
-.container {
-    overflow-x: auto; /* Adiciona rolagem horizontal, se necessário */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 100px); /* 7 dias por linha */
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: max-content;
 }
 
-/* Estilo para a tabela */
-table {
-    width: 100%; /* Garante que a tabela ocupe toda a largura da tela */
-    max-width: 100%; /* Remove limites de largura */
-    border-collapse: collapse; /* Remove espaço entre células */
+.day {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* Estilo para as células da tabela */
-td {
-    padding: 10px; /* Espaçamento interno nas células */
-    text-align: center; /* Centraliza o texto */
-    border: 1px solid #ccc; /* Borda leve nas células */
-    font-size: 16px; /* Tamanho da fonte */
+.day.green {
+    background-color: lightgreen;
 }
 
-/* Media Queries para Dispositivos Móveis */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
-    }
-
-    table {
-        font-size: 12px; /* Tamanho da fonte das tabelas para dispositivos móveis */
-    }
-
-    td {
-        padding: 8px; /* Ajusta o preenchimento nas células */
-    }
-
-    input[type="date"],
-    select {
-        width: 100%; /* Garante que os inputs ocupem toda a largura da tela */
-        padding: 10px; /* Adiciona espaçamento interno */
-        font-size: 14px; /* Ajusta o tamanho da fonte */
-    }
-
-    button {
-        width: 100%; /* Botão ocupa toda a largura da tela */
-        padding: 10px; /* Espaçamento interno do botão */
-        font-size: 14px; /* Ajusta o tamanho da fonte */
-    }
-}
-
-/* Media Query Específica para Telas Menores */
-@media (max-width: 400px) {
-    table {
-        font-size: 10px; /* Reduz ainda mais o tamanho da fonte */
-    }
-
-    td {
-        padding: 5px; /* Diminui o preenchimento nas células */
-    }
+.day.red {
+    background-color: lightcoral;
 }
