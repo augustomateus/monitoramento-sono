@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
